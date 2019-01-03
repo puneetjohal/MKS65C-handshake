@@ -10,7 +10,7 @@
 
   returns the file descriptor for the upstream pipe.
   =========================*/
-int server_handshake(int *to_client, int up) {
+int server_handshake(int *to_client) {
   remove("wkp");
   char input[BUFFER_SIZE];
   char* msg = malloc(HANDSHAKE_BUFFER_SIZE);
